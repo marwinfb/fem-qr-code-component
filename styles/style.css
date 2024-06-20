@@ -51,7 +51,8 @@ body {
 }
 
 .card__headline {
-    color: var(--clr-dark-blue);
+    /* color: var(--clr-dark-blue); */
+    color: palegoldenrod;
     margin-bottom: 16px;
     text-wrap: balance;
 }
