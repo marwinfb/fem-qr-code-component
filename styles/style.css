@@ -1,17 +1,19 @@
+@import url("https://unpkg.com/modern-css-reset/dist/reset.min.css");
+
 @font-face {
-  font-family: Outfit;
+  font-display: swap;
+  font-family: 'Outfit';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/outfit-regular.woff2) format("woff2");
+  src: url('/assets/fonts/outfit-v11-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: Outfit;
+  font-display: swap;
+  font-family: 'Outfit';
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/outfit-bold.woff2) format("woff2");
+  src: url('/assets/fonts/outfit-v11-latin-700.woff2') format('woff2');
 }
 
 :root {
@@ -21,25 +23,20 @@
   --color-dark-blue: hsl(218, 44%, 22%);
   --color-shadow: hsla(0, 0%, 0%, 0.048);
 
-  --font-primary: "Outfit", sans-serif;
+  --font-primary: 'Outfit', sans-serif;
 }
 
 body {
   background-color: var(--color-light-gray);
   font-family: var(--font-primary);
-  font-size: 1rem;
-  min-height: 100vh;
-  padding: 0 1.75rem;
+  font-size: .9375rem;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;
 }
 
-.wrapper {
+.container {
   max-width: 20rem;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .card {
@@ -49,13 +46,14 @@ body {
   padding: 1rem;
 }
 
-.card__img {
-  border-radius: 0.625rem;
+.card__image {
+  border-radius: .625rem;
   height: auto;
 }
 
-.card__info {
+.card__body {
   padding: 1.5rem 1rem;
+  text-align: center;
 }
 
 .card__headline {
