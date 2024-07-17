@@ -30,19 +30,20 @@ body {
   background-color: var(--color-light-gray);
   font-family: var(--font-primary);
   font-size: .9375rem;
+  padding: 1.75rem;
 
   display: grid;
   place-content: center;
 }
 
-.container {
-  max-width: 20rem;
-}
-
 .card {
   background-color: var(--color-white);
   border-radius: 1.25rem;
-  box-shadow: 0 25px 25px var(--color-shadow);
+  box-shadow: 0 1.5625rem 1.5625rem var(--color-shadow);
+  max-width: 20rem;
+}
+
+.card__figure {
   padding: 1rem;
 }
 
@@ -52,7 +53,7 @@ body {
 }
 
 .card__body {
-  padding: 1.5rem 1rem;
+  padding: .5rem 1rem 2.5rem;
   text-align: center;
 }
 
@@ -67,4 +68,5 @@ body {
 .card__description {
   color: var(--color-grayish-blue);
   line-height: 1.4;
+  padding: 0 1rem;
 }
